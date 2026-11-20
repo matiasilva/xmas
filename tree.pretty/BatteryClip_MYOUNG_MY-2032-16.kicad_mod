@@ -1,0 +1,157 @@
+(footprint "BatteryClip_MYOUNG_MY-2032-16"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CR2032 SMT battery clip, MYOUNG MY-2032-16 (LCSC C2902340). Pad 1 = clip (+), pad 2 = bare contact under the cell (-)")
+	(tags "battery clip CR2032 coin cell")
+	(property "Reference" "REF**"
+		(at 0 -6.2 0)
+		(layer "F.SilkS")
+		(uuid "a294beb1-3c16-4b85-9cd4-2c820ed797af")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "CR2032"
+		(at 0 6.2 0)
+		(layer "F.Fab")
+		(uuid "4f2311d4-8213-4b32-aba8-78290bbe0394")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cf9ddc5-7249-4bb0-adcc-1e2b5830ceb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ad77f910-cd97-4eaf-bd41-d3663a00ec2e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_arc
+		(start -9.748846 -3)
+		(mid 0 -10.2)
+		(end 9.748846 -3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "02c092d1-e957-48bd-82ae-4e5fd27d227c")
+	)
+	(fp_arc
+		(start 9.748846 3)
+		(mid 0 10.2)
+		(end -9.748846 3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "802dc50b-fd56-4ebd-9e25-27f0e5c17ce4")
+	)
+	(fp_poly
+		(pts
+			(xy 13.2 -2.75) (xy 13.2 2.75) (xy 9.874208 2.75) (xy 9.674872 3.385165) (xy 9.434725 4.006052) (xy 9.154781 4.61004)
+			(xy 8.836221 5.194583) (xy 8.480388 5.757214) (xy 8.088783 6.29556) (xy 7.663059 6.80735) (xy 7.20501 7.290426)
+			(xy 6.71657 7.74275) (xy 6.199798 8.162413) (xy 5.656874 8.547646) (xy 5.090089 8.896824) (xy 4.501833 9.208474)
+			(xy 3.894587 9.48128) (xy 3.270914 9.714093) (xy 2.633443 9.905931) (xy 1.984864 10.055984) (xy 1.327912 10.163618)
+			(xy 0.665359 10.228381) (xy 0 10.25) (xy -0.665359 10.228381) (xy -1.327912 10.163618) (xy -1.984864 10.055984)
+			(xy -2.633443 9.905931) (xy -3.270914 9.714093) (xy -3.894587 9.48128) (xy -4.501833 9.208474) (xy -5.090089 8.896824)
+			(xy -5.656874 8.547646) (xy -6.199798 8.162413) (xy -6.71657 7.74275) (xy -7.20501 7.290426) (xy -7.663059 6.80735)
+			(xy -8.088783 6.29556) (xy -8.480388 5.757214) (xy -8.836221 5.194583) (xy -9.154781 4.61004) (xy -9.434725 4.006052)
+			(xy -9.674872 3.385165) (xy -9.874208 2.75) (xy -13.2 2.75) (xy -13.2 -2.75) (xy -9.874208 -2.75)
+			(xy -9.674872 -3.385165) (xy -9.434725 -4.006052) (xy -9.154781 -4.61004) (xy -8.836221 -5.194583)
+			(xy -8.480388 -5.757214) (xy -8.088783 -6.29556) (xy -7.663059 -6.80735) (xy -7.20501 -7.290426)
+			(xy -6.71657 -7.74275) (xy -6.199798 -8.162413) (xy -5.656874 -8.547646) (xy -5.090089 -8.896824)
+			(xy -4.501833 -9.208474) (xy -3.894587 -9.48128) (xy -3.270914 -9.714093) (xy -2.633443 -9.905931)
+			(xy -1.984864 -10.055984) (xy -1.327912 -10.163618) (xy -0.665359 -10.228381) (xy 0 -10.25) (xy 0.665359 -10.228381)
+			(xy 1.327912 -10.163618) (xy 1.984864 -10.055984) (xy 2.633443 -9.905931) (xy 3.270914 -9.714093)
+			(xy 3.894587 -9.48128) (xy 4.501833 -9.208474) (xy 5.090089 -8.896824) (xy 5.656874 -8.547646) (xy 6.199798 -8.162413)
+			(xy 6.71657 -7.74275) (xy 7.20501 -7.290426) (xy 7.663059 -6.80735) (xy 8.088783 -6.29556) (xy 8.480388 -5.757214)
+			(xy 8.836221 -5.194583) (xy 9.154781 -4.61004) (xy 9.434725 -4.006052) (xy 9.674872 -3.385165) (xy 9.874208 -2.75)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "44bd0a2a-f061-49f3-8ce2-c486a40d2f7c")
+	)
+	(fp_rect
+		(start -9.6 -4.5)
+		(end 9.6 4.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c300fead-a51d-4011-97e3-fa820b279ba2")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 10 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3888eaae-cc41-4a26-a601-52562f83525d")
+	)
+	(pad "1" smd rect
+		(at -11.45 0)
+		(size 3 3.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "aa4b2b52-ed21-490e-b974-27259250da2a")
+	)
+	(pad "1" smd rect
+		(at 11.45 0)
+		(size 3 5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "51416868-1640-4c09-bfbf-e0ff6f6a7646")
+	)
+	(pad "2" smd circle
+		(at 0 0)
+		(size 10 10)
+		(layers "F.Cu" "F.Mask")
+		(uuid "d1de1d7f-3ae3-4288-82f8-77976259e3d1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/tree.3dshapes/MY-2032-16.step"
+		(offset
+			(xyz 0 0 3.75)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

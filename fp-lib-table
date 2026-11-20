@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "tree")(type "KiCad")(uri "${KIPRJMOD}/tree.pretty")(options "")(descr "Project footprints"))
+)
