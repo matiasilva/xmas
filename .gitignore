@@ -6,3 +6,6 @@
 _autosave-*
 fp-info-cache
 .history/
+
+# Python
+__pycache__/

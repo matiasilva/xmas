@@ -1,7 +1,7 @@
 # Firmware TODO
 
 Requirements for the Christmas tree board firmware, gathered on 2026-11-22.
-No firmware exists yet: there is no source directory, toolchain or build setup in this repo.
+No firmware exists yet: this directory holds only this file, and no toolchain or build setup has been chosen. Firmware source belongs here, in `firmware/`.
 
 Items are marked **Decided** (agreed with the owner), **Proposed** (suggested, not yet agreed) or **Unverified** (needs checking on hardware or against the datasheet). Do not treat Proposed items as requirements without asking.
 
@@ -11,7 +11,7 @@ Drive six LEDs with PWM-controlled brightness to show animated patterns, on a CR
 
 ## Hardware summary
 
-Source of truth is `tree.kicad_sch`. The PCB (`tree.kicad_pcb`) is not routed yet and has not been updated with the latest schematic changes.
+Source of truth is `hardware/tree.kicad_sch`. The PCB (`hardware/tree.kicad_pcb`) is routed and matches the schematic. `hardware/checks/pad_check.py` verifies the pin-to-pad facts below against the board file.
 
 - **MCU:** Puya PY32F002BF15U6 (Cortex-M0+, 24 KB flash, 3 KB RAM, QFN-20).
   Datasheet: https://download.py32.org/Datasheet/en/PY32F002B_Datasheet_V1.8.pdf
