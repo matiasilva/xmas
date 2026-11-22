@@ -20,7 +20,8 @@ Source of truth is `tree.kicad_sch`. The PCB (`tree.kicad_pcb`) is not routed ye
   - D1: orange, CT-1608UOC-P6-0H, top of the tree (the "star")
   - D2-D6: red, CT-1608URC-P6-0H
 - **Programming:** SWD on J1: 1 GND, 2 VCC, 3 SWDIO, 4 SWCLK, 5 NRST.
-- **No button** is fitted. The only user control is the slide switch.
+- **Button:** SW2, a tactile push button (XUNPU TS-1088-AR02016, LCSC C720477) from PA6 (pin 19) to GND, net `BTN`. Active low. There is no external pull-up or debounce capacitor, so the firmware must enable the internal pull-up and debounce.
+- **Slide switch** SW1 remains as the hard power switch.
 
 ### Pin map
 
@@ -36,7 +37,8 @@ Source of truth is `tree.kicad_sch`. The PCB (`tree.kicad_pcb`) is not routed ye
 Other pins:
 
 - SWCLK = PA2 (15), SWDIO = PB6 (5), NRST = PC0 (1). Keep these working.
-- Unused, no-connect: PA3, PA4, PA6, PB0, PB3, PB4, PB5, PB7, PC1. Leave in analog mode (the reset default).
+- Button input = PA6 (19), see above.
+- Unused, no-connect: PA3, PA4, PB0, PB3, PB4, PB5, PB7, PC1. Leave in analog mode (the reset default).
 
 **Unverified:** the AF numbers were read from a garbled text extraction of the datasheet's alternate-function tables. Confirm each against the datasheet or the vendor headers before relying on them.
 
@@ -76,7 +78,11 @@ The pattern set is **not decided**. Candidates, with estimated average duty per 
 | Steady glow | All on at half perceived brightness | 25% |
 
 - **Proposed:** cap peak duty (for example at 50%) to save power and to leave headroom for voltage compensation.
-- **Open:** how patterns are selected. There is no button. Options are a single fixed pattern, cycling on a timer, or advancing on each power-up (would need a value stored in flash). Adding a button was discussed but is not in the schematic.
+- **Decided:** an onboard button cycles through the animations, one step per press.
+- Enable the internal pull-up on PA6 and debounce in firmware (a few tens of milliseconds).
+- **Proposed:** include an "off" step in the cycle: all LEDs off and the MCU in Stop mode, woken by the button through a pin interrupt. The pull-up draws current only while the button is held.
+- **Proposed:** the auto-off timeout also lands in that off state, so a press wakes it again.
+- **Open:** whether the selected pattern should be remembered across a power cycle (would need a value stored in flash).
 
 ### Cell voltage compensation
 
@@ -102,11 +108,11 @@ Calculated from datasheets and a simple discharge model, not measured.
 ## Open hardware questions that affect firmware
 
 - **Resistor values.** R1-R6 are 1.2 kΩ. The P6-0H LEDs are about three times brighter per mA than the original reds, so raising R2-R6 to about 3.3-3.9 kΩ was suggested to cut current to a third. To be chosen by eye on the prototype. D1 and the reds are now about equally bright at the same current.
-- **Button.** Not fitted. Nine GPIOs are free if one is added (button to ground, internal pull-up, wake from Stop by pin interrupt).
+- **Capacitive touch instead of the tactile button.** Under consideration, not decided. The MCU has no touch-sensing peripheral, so the likely route is a small touch-sensor IC whose output drives the same PA6 input. Keep the button handling isolated (one input, press events) so the sensor type can change without touching the pattern code. Note that a touch IC's output may be active high.
 
 ## First steps for whoever picks this up
 
-1. Ask the owner which patterns they want and how patterns are selected.
+1. Ask the owner which patterns they want, and in what order the button should cycle them.
 2. Choose a toolchain and project layout. None has been chosen. Common options for this MCU family are GCC with the vendor HAL/LL libraries, flashed over SWD.
 3. Bring-up test: all six LEDs on hardware PWM at a fixed duty, confirming the pin map, AF numbers, inverted polarity and the shared CH4 output.
 4. Move the clock to LSI, confirm 128 Hz PWM without flicker, and measure Sleep current.
