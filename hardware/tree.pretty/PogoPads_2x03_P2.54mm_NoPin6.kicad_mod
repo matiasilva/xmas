@@ -1,0 +1,187 @@
+(footprint "PogoPads_2x03_P2.54mm_NoPin6"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Five surface pads for spring-pin (pogo) programming, on a 2x03 2.54 mm grid with position 6 left out. One side only, no holes, no solder paste")
+	(tags "Through hole pin header THT 2x03 2.54mm double row")
+	(property "Reference" "REF**"
+		(at 1.27 -2.38 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "49ac415b-5967-48b6-8008-c5e4242d1503")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PinHeader_2x03_P2.54mm_Vertical"
+		(at 1.27 7.46 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18c5d1a1-04e8-4ad3-942c-a3f6630eb4fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da952ca0-e740-450f-bd6a-886e7bb072c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f7e68ddc-4954-4431-a37e-00aa63c0c1b8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "connector/pin_header_socket"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "04f5e530-fc90-446e-b5e3-e6a011f134d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 4.32 6.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a07710d7-cc20-4425-b060-2828553a7b6d")
+	)
+	(fp_line
+		(start -1.27 0)
+		(end 0 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c6c634ec-f775-425a-99ff-c536bdf2bfda")
+	)
+	(fp_line
+		(start -1.27 6.35)
+		(end -1.27 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f0d16bc1-e58b-49b0-9d4b-dd477caa5b8f")
+	)
+	(fp_line
+		(start 0 -1.27)
+		(end 3.81 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "439d3f7e-6b21-4ef9-a418-55bbcca4cb7e")
+	)
+	(fp_line
+		(start 3.81 -1.27)
+		(end 3.81 6.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "388b3e59-64f7-4dbe-a80b-26fefc5f29c9")
+	)
+	(fp_line
+		(start 3.81 6.35)
+		(end -1.27 6.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "57450936-48a8-4d5b-b763-a2470e3ab5e2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 2.54 90)
+		(layer "F.Fab")
+		(uuid "abe8192f-120f-4fe9-8e6f-d59aa5fffe11")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(layers "F.Cu" "F.Mask")
+		(remove_unused_layers no)
+		(uuid "f614d154-d2d5-4bad-b9d0-834a507e8a26")
+	)
+	(pad "2" smd circle
+		(at 2.54 0)
+		(size 1.7 1.7)
+		(layers "F.Cu" "F.Mask")
+		(remove_unused_layers no)
+		(uuid "6f2f04bd-3d5e-4477-aeff-a8f7758f1d8d")
+	)
+	(pad "3" smd circle
+		(at 0 2.54)
+		(size 1.7 1.7)
+		(layers "F.Cu" "F.Mask")
+		(remove_unused_layers no)
+		(uuid "7972035d-05e7-45c7-aeff-29a59491bf36")
+	)
+	(pad "4" smd circle
+		(at 2.54 2.54)
+		(size 1.7 1.7)
+		(layers "F.Cu" "F.Mask")
+		(remove_unused_layers no)
+		(uuid "1eb31a13-c276-4dbf-b2cc-5c50a110898f")
+	)
+	(pad "5" smd circle
+		(at 0 5.08)
+		(size 1.7 1.7)
+		(layers "F.Cu" "F.Mask")
+		(remove_unused_layers no)
+		(uuid "cdc7cd7a-a3a6-48ff-b444-3c7585468b23")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

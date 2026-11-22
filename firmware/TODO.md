@@ -19,7 +19,7 @@ Source of truth is `hardware/tree.kicad_sch`. The PCB (`hardware/tree.kicad_pcb`
 - **LEDs:** active low. Anode to VCC through 1.2 kΩ, cathode to the MCU pin. The pin sinks current, so PWM output polarity must be inverted (pin low = LED on).
   - D1: orange, CT-1608UOC-P6-0H, top of the tree (the "star")
   - D2-D6: red, CT-1608URC-P6-0H
-- **Programming:** SWD on J1: 1 GND, 2 VCC, 3 SWDIO, 4 SWCLK, 5 NRST.
+- **Programming:** SWD on J1: 1 GND, 2 VCC, 3 SWDIO, 4 SWCLK, 5 NRST. J1 is five surface pads on the back of the trunk (2x3 grid at 2.54 mm, position 6 absent), meant for a spring-pin clip. There are no holes, so a header cannot be soldered in.
 - **Button:** SW2, a tactile push button (XUNPU TS-1088-AR02016, LCSC C720477) from PA6 (pin 19) to GND, net `BTN`. Active low. There is no external pull-up or debounce capacitor, so the firmware must enable the internal pull-up and debounce.
 - **Slide switch** SW1 remains as the hard power switch.
 
