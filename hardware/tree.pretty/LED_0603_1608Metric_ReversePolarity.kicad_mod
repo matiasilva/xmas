@@ -6,7 +6,7 @@
 	(tags "LED")
 	(property "Reference" "REF**"
 		(at 0 -1.43 0)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(effects
 			(font
 				(size 1 1)
@@ -26,7 +26,7 @@
 	)
 	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 		(at 0 0 0)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(hide yes)
 		(effects
 			(font
@@ -44,7 +44,7 @@
 			(width 0.12)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 	)
 	(fp_line
 		(start -1.485 0.735)
@@ -53,7 +53,7 @@
 			(width 0.12)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 	)
 	(fp_line
 		(start 0.8 -0.735)
@@ -62,7 +62,7 @@
 			(width 0.12)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 	)
 	(fp_rect
 		(start -1.48 -0.73)
