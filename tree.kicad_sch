@@ -206,6 +206,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	(symbol "tree:PY32F002BF15U"
 		(exclude_from_sim no) (in_bom yes) (on_board yes)
 		(property "Reference" "U" (at -10.16 16.51 0) (effects (font (size 1.27 1.27))))
@@ -1177,7 +1332,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608UOC-P6"
+		(property "Value" "CT-1608UOC-P6-0H"
 			(at 50.8 80.01 0)
 			(effects
 				(font
@@ -1203,7 +1358,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 50.8 76.2 0)
 			(hide yes)
 			(effects
@@ -1212,7 +1367,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675993" (at 50.8 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676004" (at 50.8 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Orange" (at 50.8 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "078171d4-9fdc-4106-9b4f-d68a4670a5a0")
@@ -1248,7 +1403,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608URC-P4"
+		(property "Value" "CT-1608URC-P6-0H"
 			(at 71.12 80.01 0)
 			(effects
 				(font
@@ -1274,7 +1429,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 71.12 76.2 0)
 			(hide yes)
 			(effects
@@ -1283,7 +1438,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675987" (at 71.12 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676005" (at 71.12 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Red" (at 71.12 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "87e52e73-beaa-4346-a78f-d68e546ce6eb")
@@ -1319,7 +1474,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608URC-P4"
+		(property "Value" "CT-1608URC-P6-0H"
 			(at 91.44 80.01 0)
 			(effects
 				(font
@@ -1345,7 +1500,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(effects
@@ -1354,7 +1509,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675987" (at 91.44 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676005" (at 91.44 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Red" (at 91.44 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "ada2658b-99ee-4c16-8101-0c775e1ed8b1")
@@ -1390,7 +1545,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608URC-P4"
+		(property "Value" "CT-1608URC-P6-0H"
 			(at 111.76 80.01 0)
 			(effects
 				(font
@@ -1416,7 +1571,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 111.76 76.2 0)
 			(hide yes)
 			(effects
@@ -1425,7 +1580,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675987" (at 111.76 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676005" (at 111.76 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Red" (at 111.76 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "743e10e6-3ba0-4230-b9fd-25c4140ad23f")
@@ -1461,7 +1616,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608URC-P4"
+		(property "Value" "CT-1608URC-P6-0H"
 			(at 132.08 80.01 0)
 			(effects
 				(font
@@ -1487,7 +1642,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 132.08 76.2 0)
 			(hide yes)
 			(effects
@@ -1496,7 +1651,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675987" (at 132.08 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676005" (at 132.08 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Red" (at 132.08 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "7c39bd58-1546-4bb6-82dd-282b4cbb8815")
@@ -1532,7 +1687,7 @@
 				)
 			)
 		)
-		(property "Value" "CT-1608URC-P4"
+		(property "Value" "CT-1608URC-P6-0H"
 			(at 152.4 80.01 0)
 			(effects
 				(font
@@ -1558,7 +1713,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
 			(at 152.4 76.2 0)
 			(hide yes)
 			(effects
@@ -1567,7 +1722,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C52675987" (at 152.4 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C52676005" (at 152.4 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Color" "Red" (at 152.4 76.2 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1"
 			(uuid "c52791b3-19d1-489b-8626-ab88c3a0d978")
@@ -1860,8 +2015,7 @@
 	(label "LED2" (at 86.36 114.3 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7238350e-23be-4ec9-9cd5-5d305605e209"))
 	(wire (pts (xy 88.9 116.84) (xy 86.36 116.84)) (stroke (width 0) (type default)) (uuid "60a2058f-7769-47b0-84e8-50a57c34182b"))
 	(label "LED3" (at 86.36 116.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "21d505aa-46e7-4056-a922-85da86411b54"))
-	(wire (pts (xy 88.9 124.46) (xy 86.36 124.46)) (stroke (width 0) (type default)) (uuid "ee814a44-bba0-4336-84f7-a684014b93da"))
-	(label "LED4" (at 86.36 124.46 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2e20bc41-b9ee-4df1-a316-d89372916cd3"))
+	(no_connect (at 88.9 124.46) (uuid "19b35c0a-7f84-4d75-abc0-925fe099a829"))
 	(wire (pts (xy 88.9 127.0) (xy 86.36 127.0)) (stroke (width 0) (type default)) (uuid "ffbed466-ded6-4330-8844-7d8ad3c36884"))
 	(label "LED1" (at 86.36 127.0 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ac4a46d7-28c9-47c3-8396-68238e66b205"))
 	(wire (pts (xy 88.9 132.08) (xy 86.36 132.08)) (stroke (width 0) (type default)) (uuid "fd12f9bc-a5b9-44e4-a0a5-2c4f8741b894"))
@@ -2009,6 +2163,47 @@
 	(label "SWCLK" (at 132.08 127.0 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6af0186f-686e-41ab-948a-a464cacfd218"))
 	(wire (pts (xy 134.62 129.54) (xy 132.08 129.54)) (stroke (width 0) (type default)) (uuid "fe95b3bd-13d5-4627-b071-eaf8312773d0"))
 	(label "NRST" (at 132.08 129.54 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c6210c90-d026-410e-a6e8-d3b0a67e6c32"))
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bf83300-8617-49fb-8dc8-d10b01d05253")
+		(property "Reference" "C1" (at 124.46 100.33 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Value" "100nF" (at 124.46 102.87 0) (effects (font (size 1.27 1.27)) (justify left)))
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 122.8852 105.41 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 121.92 101.6 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "U1 decoupling capacitor, X7R, place close to U1 pins 6 (VCC) and 4 (VSS)" (at 121.92 101.6 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "48ef6753-578e-44ec-9562-aec185c7c903"))
+		(pin "2" (uuid "6798b8ff-443f-439f-a223-4c7274862f05"))
+		(instances
+			(project "tree"
+				(path "/3f31b7c8-6f84-4f1c-9a5b-3903f892dde9"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 121.92 97.79) (xy 121.92 95.25)) (stroke (width 0) (type default)) (uuid "871c2e16-c55c-4cf8-913e-ce230b649c3f"))
+	(label "VCC" (at 121.92 95.25 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e08271b-a97c-4482-8677-2adf9f37a302"))
+	(wire (pts (xy 121.92 105.41) (xy 121.92 107.95)) (stroke (width 0) (type default)) (uuid "4eefd0da-8e14-48ca-94bd-001b5791657d"))
+	(label "GND" (at 121.92 107.95 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3ebafa67-53ab-447b-9e55-3eb424fbad79"))
+	(no_connect (at 88.9 121.92) (uuid "bb20fcf1-17bf-46cc-b8fe-89cae2733e4f"))
+	(no_connect (at 88.9 129.54) (uuid "9f5a3405-3206-44ba-99e5-ae02f0ada178"))
+	(no_connect (at 114.3 114.3) (uuid "5e87f5de-6bcb-48cc-bc20-80a5c0f32da6"))
+	(wire (pts (xy 114.3 116.84) (xy 116.84 116.84)) (stroke (width 0) (type default)) (uuid "dee49520-01b0-41f6-8eb8-4418b258eed3"))
+	(label "LED4" (at 116.84 116.84 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ca06bcd5-ce5a-49bc-9ced-53ec01ef00c0"))
+	(no_connect (at 114.3 121.92) (uuid "3047cf54-30c5-43fa-a1ee-3133bc95764d"))
+	(no_connect (at 114.3 124.46) (uuid "a57aa0f8-8987-4562-b239-90890d1267cc"))
+	(no_connect (at 114.3 127.0) (uuid "b07a5cb8-f606-4f3e-87e1-747da372d9b4"))
+	(no_connect (at 114.3 132.08) (uuid "5da7a590-6bf9-48b5-b422-07eeda5fde57"))
+	(no_connect (at 114.3 137.16) (uuid "9f075b49-eca1-4ddc-acc7-f57e001c4146"))
 	(sheet_instances
 		(path "/"
 			(page "1")
