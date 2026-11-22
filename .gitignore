@@ -9,3 +9,6 @@ fp-info-cache
 
 # Python
 __pycache__/
+
+# Fabrication Toolkit output
+production/
