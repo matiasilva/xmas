@@ -5,7 +5,7 @@
 	(uuid 3f31b7c8-6f84-4f1c-9a5b-3903f892dde9)
 	(paper "A4")
 	(lib_symbols
-	(symbol "Device:LED"
+		(symbol "tree:LED_ReversePolarity"
 			(pin_numbers
 				(hide yes)
 			)
@@ -60,7 +60,7 @@
 					)
 				)
 			)
-			(property "Description" "Light emitting diode"
+			(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -71,7 +71,7 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
+			(property "Sim.Pins" "1=A 2=K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -82,7 +82,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "LED diode"
+			(property "ki_keywords" "LED diode reverse polarity"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -104,7 +104,7 @@
 					)
 				)
 			)
-			(symbol "LED_0_1"
+			(symbol "LED_ReversePolarity_0_1"
 				(polyline
 					(pts
 						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
@@ -166,7 +166,7 @@
 					)
 				)
 			)
-			(symbol "LED_1_1"
+			(symbol "LED_ReversePolarity_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -177,7 +177,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -195,7 +195,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -344,6 +344,170 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1314,7 +1478,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 50.8 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1336,11 +1500,11 @@
 			(at 50.8 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 50.8 76.2 0)
 			(hide yes)
 			(effects
@@ -1358,7 +1522,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 50.8 76.2 0)
 			(hide yes)
 			(effects
@@ -1385,7 +1549,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 71.12 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1407,11 +1571,11 @@
 			(at 71.12 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 71.12 76.2 0)
 			(hide yes)
 			(effects
@@ -1429,7 +1593,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 71.12 76.2 0)
 			(hide yes)
 			(effects
@@ -1456,7 +1620,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 91.44 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1478,11 +1642,11 @@
 			(at 91.44 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(effects
@@ -1500,7 +1664,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 91.44 76.2 0)
 			(hide yes)
 			(effects
@@ -1527,7 +1691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 111.76 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1549,11 +1713,11 @@
 			(at 111.76 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 111.76 76.2 0)
 			(hide yes)
 			(effects
@@ -1571,7 +1735,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 111.76 76.2 0)
 			(hide yes)
 			(effects
@@ -1598,7 +1762,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 132.08 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1620,11 +1784,11 @@
 			(at 132.08 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 132.08 76.2 0)
 			(hide yes)
 			(effects
@@ -1642,7 +1806,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 132.08 76.2 0)
 			(hide yes)
 			(effects
@@ -1669,7 +1833,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "tree:LED_ReversePolarity")
 		(at 152.4 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -1691,11 +1855,11 @@
 			(at 152.4 80.01 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "tree:LED_0603_1608Metric_ReversePolarity"
 			(at 152.4 76.2 0)
 			(hide yes)
 			(effects
@@ -1713,7 +1877,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode. Reverse-polarity part: its marked end is the anode, so fit it with the mark on pad 2, away from the footprint cathode mark"
+		(property "Description" "Light emitting diode, reverse-polarity package: pin 1 (marked end) is the anode"
 			(at 152.4 76.2 0)
 			(hide yes)
 			(effects
@@ -2195,7 +2359,8 @@
 	(wire (pts (xy 121.92 105.41) (xy 121.92 107.95)) (stroke (width 0) (type default)) (uuid "4eefd0da-8e14-48ca-94bd-001b5791657d"))
 	(label "GND" (at 121.92 107.95 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3ebafa67-53ab-447b-9e55-3eb424fbad79"))
 	(no_connect (at 88.9 121.92) (uuid "bb20fcf1-17bf-46cc-b8fe-89cae2733e4f"))
-	(no_connect (at 88.9 129.54) (uuid "9f5a3405-3206-44ba-99e5-ae02f0ada178"))
+	(wire (pts (xy 88.9 129.54) (xy 86.36 129.54)) (stroke (width 0) (type default)) (uuid "3fb06c0d-d9c1-467a-b910-58dd6f3a7654"))
+	(label "BTN" (at 86.36 129.54 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f19b3120-f6b3-41e0-84f9-d1946d69eec8"))
 	(no_connect (at 114.3 114.3) (uuid "5e87f5de-6bcb-48cc-bc20-80a5c0f32da6"))
 	(wire (pts (xy 114.3 116.84) (xy 116.84 116.84)) (stroke (width 0) (type default)) (uuid "dee49520-01b0-41f6-8eb8-4418b258eed3"))
 	(label "LED4" (at 116.84 116.84 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ca06bcd5-ce5a-49bc-9ced-53ec01ef00c0"))
@@ -2204,6 +2369,38 @@
 	(no_connect (at 114.3 127.0) (uuid "b07a5cb8-f606-4f3e-87e1-747da372d9b4"))
 	(no_connect (at 114.3 132.08) (uuid "5da7a590-6bf9-48b5-b422-07eeda5fde57"))
 	(no_connect (at 114.3 137.16) (uuid "9f075b49-eca1-4ddc-acc7-f57e001c4146"))
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 139.7 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97b6097f-915a-4f26-92de-3ccfb8b591e2")
+		(property "Reference" "SW2" (at 139.7 137.16 0) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS-1088-AR02016" (at 139.7 146.05 0) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "tree:SW-SMD_L3.9-W3.0-P4.45" (at 139.7 137.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "" (at 139.7 137.16 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Description" "Pattern select button to GND. No external pull-up: uses the MCU internal pull-up on PA6, debounced in firmware" (at 139.7 142.24 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C720477" (at 139.7 142.24 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "054d7757-d549-4127-a251-7bc1f2396463"))
+		(pin "2" (uuid "c12da7d3-e37f-400f-9a33-c08c28be02e7"))
+		(instances
+			(project "tree"
+				(path "/3f31b7c8-6f84-4f1c-9a5b-3903f892dde9"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire (pts (xy 134.62 142.24) (xy 132.08 142.24)) (stroke (width 0) (type default)) (uuid "c2c12a74-7819-44dc-beb2-0045c93e1184"))
+	(label "BTN" (at 132.08 142.24 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d83b9fb1-ed51-41b3-9ec0-cd3e823e614f"))
+	(wire (pts (xy 144.78 142.24) (xy 147.32 142.24)) (stroke (width 0) (type default)) (uuid "87ea7d74-d91e-43f8-9328-a52d40211a73"))
+	(label "GND" (at 147.32 142.24 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2b40fa92-b73f-4b3d-aec9-9c1e68a42153"))
 	(sheet_instances
 		(path "/"
 			(page "1")
