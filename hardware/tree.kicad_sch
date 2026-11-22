@@ -1919,6 +1919,7 @@
 		(property "Footprint" "Package_DFN_QFN:UQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm" (at 101.6 127.0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "https://www.puyasemi.com" (at 101.6 127.0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Puya PY32F002B, Cortex-M0+, 24KB flash, 3KB RAM, 18 GPIO, QFN-20 3x3mm" (at 101.6 127.0 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C7469099" (at 101.6 127.0 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "249ff16c-7292-4a66-886a-37174ba76189"))
 		(pin "2" (uuid "ed4246e2-caf8-45e6-8092-9ec6e99ff692"))
 		(pin "3" (uuid "872fa2aa-8671-42a3-80e3-8674925359ac"))
@@ -1965,6 +1966,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 54.61 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 54.61 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 54.61 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 54.61 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "dd084d40-8296-4a09-affa-9071e3d1811d"))
 		(pin "2" (uuid "04a0d594-ab20-4a32-8e06-c4e8668e09ce"))
 		(instances
@@ -1993,6 +1995,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 74.93 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 74.93 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 74.93 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 74.93 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "02b35c83-75d6-451e-842e-4ebe8e2937ab"))
 		(pin "2" (uuid "e294b8a1-41bd-4580-9e20-2f86969468f3"))
 		(instances
@@ -2021,6 +2024,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 95.25 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 95.25 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 95.25 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 95.25 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "0b172387-04dd-49d7-badc-0d1aee87d5a0"))
 		(pin "2" (uuid "fe09b5df-05e5-49c5-b296-e30d50430ab1"))
 		(instances
@@ -2049,6 +2053,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 115.57 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 115.57 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 115.57 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 115.57 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "3c9ce7f8-1617-4532-a397-e35a92801f19"))
 		(pin "2" (uuid "9b22ca0a-d581-4c9d-8e08-df5a02bb9362"))
 		(instances
@@ -2077,6 +2082,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 135.89 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 135.89 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 135.89 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 135.89 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "57860c17-903c-4bf0-b2d4-7600aef0f458"))
 		(pin "2" (uuid "7744b815-3859-4b96-b546-b532da31415b"))
 		(instances
@@ -2105,6 +2111,7 @@
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 156.21 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 156.21 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "Resistor" (at 156.21 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C22765" (at 156.21 68.58 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "5b8ecf61-b94d-4681-9bcf-4de16c7ef7dc"))
 		(pin "2" (uuid "e4d995ff-f84b-4a7b-9877-880c553f792f"))
 		(instances
@@ -2343,6 +2350,7 @@
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 122.8852 105.41 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Datasheet" "" (at 121.92 101.6 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(property "Description" "U1 decoupling capacitor, X7R, place close to U1 pins 6 (VCC) and 4 (VSS)" (at 121.92 101.6 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "LCSC" "C14663" (at 121.92 101.6 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "48ef6753-578e-44ec-9562-aec185c7c903"))
 		(pin "2" (uuid "6798b8ff-443f-439f-a223-4c7274862f05"))
 		(instances
