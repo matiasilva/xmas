@@ -87,88 +87,6 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "tree:PinHole_1.6mm_NPTH"
-		(layer "F.Cu")
-		(uuid "02657e8f-ffda-4b38-89a1-93009ee7f353")
-		(at 100 75.5)
-		(descr "Unplated 1.6 mm hole for a clothes/safety pin")
-		(property "Reference" "H1"
-			(at 0 -2 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8bd40855-c598-4970-8f3c-5031b89e4f3e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pin hole"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "988adc96-1a4f-419f-bdc4-8520763d4bfe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dc178b9c-b5dd-4c59-abc7-ba1b23d6d62b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cec98aa9-36cd-4990-8fa5-5fd527821fe9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr board_only exclude_from_pos_files exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill no)
-			(layer "B.CrtYd")
-			(uuid "0ae455a8-21d8-4f39-95b1-5c30a01732f2")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 1.3 0)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "52fbede2-45e4-4b08-9bde-910980ce92bb")
-		)
-		(pad "" np_thru_hole circle
-			(at 0 0)
-			(size 1.6 1.6)
-			(drill 1.6)
-			(layers "*.Cu" "*.Mask")
-			(uuid "8b288b7e-0222-45b1-9963-9659d08f23ce")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "tree:LED_0603_1608Metric_ReversePolarity"
 		(layer "F.Cu")
 		(uuid "0693afac-df90-4734-9792-826ed10d3701")
@@ -388,6 +306,89 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "tree:ToolingHole_JLCPCB_1.152mm"
+		(layer "F.Cu")
+		(uuid "089e3104-cf8c-4a15-82ec-89627d725f6c")
+		(at 115 115)
+		(descr "JLCPCB assembly tooling hole: 1.152 mm unplated, 0.148 mm solder mask expansion")
+		(property "Reference" "TH2"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76798873-6da9-489b-9bb5-204c6c39ca55")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Tooling hole"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ed32084-6f2e-4c02-8767-d70b919885c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da9490d6-e998-4ffe-8ec9-8eaf8e25b2b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7002e176-d356-4312-9e29-8233d1bb44d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "ff59f116-467c-4181-aea6-fcd7d343432c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "95c575a6-6ba8-40d9-8e18-88dda9f6a2ca")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1.152 1.152)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(uuid "d85cf2a5-2226-42af-a310-a1cc3f7c2cfd")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "tree:LED_0603_1608Metric_ReversePolarity"
 		(layer "F.Cu")
@@ -1048,6 +1049,172 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "tree:ToolingHole_JLCPCB_1.152mm"
+		(layer "F.Cu")
+		(uuid "6de12794-41d7-4269-b7f0-8a6f806a7173")
+		(at 85 115)
+		(descr "JLCPCB assembly tooling hole: 1.152 mm unplated, 0.148 mm solder mask expansion")
+		(property "Reference" "TH1"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b5ee6f5-abba-4313-a05c-980213972d52")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Tooling hole"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ed22f60-73cf-4a59-82d6-bd7bc4931154")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef780134-f88b-4498-a7b0-94509004dffd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6e360bf-22e4-44c8-9f45-450f92921fd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "e27042bf-0a49-452e-844d-119eddffc7ab")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "958570e5-ace4-4545-a3fc-ac740ee1fd6e")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1.152 1.152)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(uuid "7c888f8b-0d7b-439b-98a8-0957b48abc74")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "tree:ToolingHole_JLCPCB_1.152mm"
+		(layer "F.Cu")
+		(uuid "96b05f29-b1eb-46ca-aafb-92c607769fc8")
+		(at 100 75.5)
+		(descr "JLCPCB assembly tooling hole: 1.152 mm unplated, 0.148 mm solder mask expansion")
+		(property "Reference" "TH3"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b996b16c-1a66-43dd-afaf-bbe76be33f37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Tooling hole"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96cbb666-f835-439f-a392-06d4afaa3cb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f9f7bb8-7d64-48d5-961b-9ed62a15505a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6a9eaa1-a651-488d-9477-fc1879fbda7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "B.CrtYd")
+			(uuid "b3c321b9-c88b-4927-9e89-fd360ceae53a")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.95 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "471daa69-8f9d-4edf-998c-05fb80fd632d")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 1.152 1.152)
+			(drill 1.152)
+			(layers "*.Cu" "*.Mask")
+			(solder_mask_margin 0.148)
+			(uuid "825548b6-26fd-447d-89b2-63300a8391cf")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "tree:LED_0603_1608Metric_ReversePolarity"
 		(layer "F.Cu")
