@@ -66,8 +66,8 @@
 	(attr smd exclude_from_pos_files)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -1.77 -1.77)
-		(end 4.32 6.85)
+		(start -1.1 -1.1)
+		(end 3.64 6.18)
 		(stroke
 			(width 0.05)
 			(type solid)
